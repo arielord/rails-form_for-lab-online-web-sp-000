@@ -17,6 +17,7 @@ class SchoolClassesController < ApplicationController
   end
   
   def edit
+    @schoolclass
   end
   
   def update
