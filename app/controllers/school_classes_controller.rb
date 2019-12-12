@@ -12,7 +12,7 @@ class SchoolClassesController < ApplicationController
   end
   
   def create
-    @studentclass = StudentClass.create(params.require)
+    @studentclass = StudentClass.create(post_params(:title, :room_number))
   end
   
   def edit
