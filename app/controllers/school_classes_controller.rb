@@ -17,10 +17,12 @@ class SchoolClassesController < ApplicationController
   end
   
   def edit
-    @schoolclass
+    @schoolclass = SchoolClass.find(params[:id])
   end
   
   def update
+    @schoolclass = SchoolClass.find(params[:id])
+    @schoolclass.update(post_params(:title, :room_number))
   end
   
   private
