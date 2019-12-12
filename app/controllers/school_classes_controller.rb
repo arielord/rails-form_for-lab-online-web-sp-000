@@ -12,6 +12,7 @@ class SchoolClassesController < ApplicationController
   end
   
   def create
+    @studentclass = StudentClass.create()
   end
   
   def edit
