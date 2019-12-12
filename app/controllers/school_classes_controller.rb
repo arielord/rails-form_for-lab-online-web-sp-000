@@ -1,8 +1,10 @@
 class SchoolClassesController < ApplicationController
   def index
+    @schoolclasses = SchoolClasse.all
   end
   
   def show
+    @schoolclass = SchoolClass
   end
   
   def new
