@@ -21,9 +21,9 @@ class SchoolClassesController < ApplicationController
   def update
   end
   
-  # private
+  private
   
-  # def post_params(*args)
-  #   params.require(:).permit(*args)
-  # end
+  def post_params(*args)
+    params.require(:).permit(*args)
+  end
 end
