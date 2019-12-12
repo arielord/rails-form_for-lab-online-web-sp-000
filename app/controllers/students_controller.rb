@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   end
   
   def create
-    @student = Student.create(post_params(:title, :room_number))
+    @student = Student.create(post_params(:first_name, :last_name))
     redirect_to school_class_path(@student)
   end
   
@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
   
   def update
     @student = Student.find(params[:id])
-    @student.update(post_params(:title, :room_number))
+    @student.update(post_params(:first_name, :last_name))
   end
   
   private
